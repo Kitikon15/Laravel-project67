@@ -16,6 +16,25 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Laravel Project67</a>
+            <div class="navbar-nav ml-auto">
+                @auth
+                    <span class="navbar-text mr-3">ยินดีต้อนรับ, {{ Auth::user()->name }}!</span>
+                    <a class="nav-link" href="/create">สร้างโพสต์</a>
+                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-light btn-sm ml-2">ออกจากระบบ</button>
+                    </form>
+                @else
+                    <a class="nav-link" href="{{ route('login') }}">เข้าสู่ระบบ</a>
+                @endauth
+            </div>
+        </div>
+    </nav>
+
     <div class="container mt-4">
         <h1 class="mb-4">List of Posts</h1>
         <div class="row">

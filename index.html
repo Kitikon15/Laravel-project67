@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เอกสารประกอบโปรเจกต์ Laravel-Project67</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .section-header {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-code"></i> Laravel-Project67</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#overview">ภาพรวม</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">ฟีเจอร์</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#architecture">สถาปัตยกรรม</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#installation">การติดตั้ง</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#usage">การใช้งาน</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 mb-3"><i class="fab fa-laravel"></i> Laravel-Project67</h1>
+            <p class="lead">ระบบจัดการโพสต์และบทความ พัฒนาด้วย Laravel Framework</p>
+            <p class="mb-0">เอกสารประกอบการทำงานของระบบ</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- ภาพรวมโปรเจกต์ -->
+        <section id="overview" class="mb-5">
+            <h2 class="section-header"><i class="fas fa-info-circle"></i> ภาพรวมโปรเจกต์</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card p-4">
+                        <h4>เกี่ยวกับโปรเจกต์</h4>
+                        <p>Laravel-Project67 เป็นเว็บแอปพลิเคชันสำหรับการจัดการโพสต์และบทความ พัฒนาด้วย Laravel Framework ซึ่งเป็น PHP web framework ที่ทันสมัยและมีประสิทธิภาพ</p>
+                        
+                        <h5>วัตถุประสงค์หลัก:</h5>
+                        <ul>
+                            <li>จัดการการสร้าง แสดงผล และจัดเก็บโพสต์</li>
+                            <li>ให้ผู้ใช้สามารถเขียนและแชร์เนื้อหาได้</li>
+                            <li>แสดงรายการโพสต์แบบแบ่งหน้า (Pagination)</li>
+                            <li>ใช้เป็นตัวอย่างการพัฒนาด้วย Laravel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card p-4 text-center">
+                        <i class="fas fa-cogs feature-icon"></i>
+                        <h5>เทคโนโลยีหลัก</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Backend:</strong> Laravel Framework</li>
+                            <li><strong>Database:</strong> SQLite</li>
+                            <li><strong>Frontend:</strong> Blade Templates</li>
+                            <li><strong>Styling:</strong> Bootstrap 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ฟีเจอร์หลัก -->
+        <section id="features" class="mb-5">
+            <h2 class="section-header"><i class="fas fa-star"></i> ฟีเจอร์หลัก</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-plus-circle feature-icon"></i>
+                        <h5>สร้างโพสต์</h5>
+                        <p>ผู้ใช้สามารถสร้างโพสต์ใหม่ได้ โดยระบุ หัวข้อ, เนื้อหา, และชื่อผู้โพสต์</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-list feature-icon"></i>
+                        <h5>แสดงรายการโพสต์</h5>
+                        <p>แสดงโพสต์ทั้งหมดในรูปแบบการ์ด พร้อมระบบแบ่งหน้า</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center p-4">
+                        <i class="fas fa-database feature-icon"></i>
+                        <h5>จัดเก็บข้อมูล</h5>
+                        <p>ใช้ Eloquent ORM ในการจัดการข้อมูลและฐานข้อมูล</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- สถาปัตยกรรมระบบ -->
+        <section id="architecture" class="mb-5">
+            <h2 class="section-header"><i class="fas fa-sitemap"></i> สถาปัตยกรรมระบบ</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-layer-group"></i> รูปแบบ MVC</h5>
+                        <ul>
+                            <li><strong>Model:</strong> Post.php - จัดการข้อมูลโพสต์</li>
+                            <li><strong>View:</strong> Blade Templates - แสดงผลหน้าเว็บ</li>
+                            <li><strong>Controller:</strong> PostController.php - ควบคุมการทำงาน</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-route"></i> Routes ที่สำคัญ</h5>
+                        <div class="code-block">
+                            <small>
+                                <strong>GET /:</strong> หน้าแรก (welcome)<br>
+                                <strong>GET /home:</strong> แสดงโพสต์ตัวอย่าง<br>
+                                <strong>GET /create:</strong> ฟอร์มสร้างโพสต์<br>
+                                <strong>POST /posts:</strong> บันทึกโพสต์ใหม่<br>
+                                <strong>GET /message:</strong> แสดงโพสต์ทั้งหมด
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- โครงสร้างไฟล์ -->
+        <section class="mb-5">
+            <h2 class="section-header"><i class="fas fa-folder-open"></i> โครงสร้างไฟล์สำคัญ</h2>
+            <div class="card p-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-code"></i> Controllers</h6>
+                        <div class="code-block">
+                            <small>
+                                📁 app/Http/Controllers/<br>
+                                &nbsp;&nbsp;├── Controller.php<br>
+                                &nbsp;&nbsp;└── PostController.php
+                            </small>
+                        </div>
+                        
+                        <h6><i class="fas fa-cube"></i> Models</h6>
+                        <div class="code-block">
+                            <small>
+                                📁 app/Models/<br>
+                                &nbsp;&nbsp;├── Post.php<br>
+                                &nbsp;&nbsp;└── User.php
+                            </small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-eye"></i> Views</h6>
+                        <div class="code-block">
+                            <small>
+                                📁 resources/views/<br>
+                                &nbsp;&nbsp;├── create.blade.php<br>
+                                &nbsp;&nbsp;├── index.blade.php<br>
+                                &nbsp;&nbsp;├── message.blade.php<br>
+                                &nbsp;&nbsp;└── welcome.blade.php
+                            </small>
+                        </div>
+                        
+                        <h6><i class="fas fa-database"></i> Migrations</h6>
+                        <div class="code-block">
+                            <small>
+                                📁 database/migrations/<br>
+                                &nbsp;&nbsp;└── create_posts_table.php
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- การติดตั้งและใช้งาน -->
+        <section id="installation" class="mb-5">
+            <h2 class="section-header"><i class="fas fa-download"></i> การติดตั้งและใช้งาน</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-cog"></i> ความต้องการของระบบ</h5>
+                        <ul>
+                            <li>PHP 8.2 หรือสูงกว่า</li>
+                            <li>Composer สำหรับจัดการ dependencies</li>
+                            <li>Node.js และ npm</li>
+                            <li>SQLite หรือฐานข้อมูลอื่นๆ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card p-4">
+                        <h5><i class="fas fa-terminal"></i> คำสั่งติดตั้ง</h5>
+                        <div class="code-block">
+                            <small>
+                                # ติดตั้ง PHP dependencies<br>
+                                <strong>composer install</strong><br><br>
+                                # ติดตั้ง Frontend dependencies<br>
+                                <strong>npm install</strong><br><br>
+                                # รันเซิร์ฟเวอร์พัฒนา<br>
+                                <strong>php artisan serve</strong>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- การใช้งาน -->
+        <section id="usage" class="mb-5">
+            <h2 class="section-header"><i class="fas fa-play-circle"></i> การใช้งานระบบ</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <h6><i class="fas fa-home"></i> หน้าแรก</h6>
+                        <p>เข้าถึงได้ที่ <strong>/</strong><br>
+                        แสดงหน้า welcome page</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <h6><i class="fas fa-plus"></i> สร้างโพสต์</h6>
+                        <p>เข้าถึงได้ที่ <strong>/create</strong><br>
+                        ฟอร์มสำหรับสร้างโพสต์ใหม่</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-4">
+                        <h6><i class="fas fa-list"></i> รายการโพสต์</h6>
+                        <p>เข้าถึงได้ที่ <strong>/message</strong><br>
+                        แสดงโพสต์ทั้งหมดแบบแบ่งหน้า</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- โครงสร้างข้อมูล -->
+        <section class="mb-5">
+            <h2 class="section-header"><i class="fas fa-table"></i> โครงสร้างข้อมูล</h2>
+            <div class="card p-4">
+                <h5>ตาราง Posts</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>ฟิลด์</th>
+                                <th>ประเภท</th>
+                                <th>คำอธิบาย</th>
+                                <th>ข้อกำหนด</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>id</td>
+                                <td>Primary Key</td>
+                                <td>รหัสโพสต์ (Auto Increment)</td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td>title</td>
+                                <td>String</td>
+                                <td>หัวข้อโพสต์</td>
+                                <td>Required, Max: 255</td>
+                            </tr>
+                            <tr>
+                                <td>content</td>
+                                <td>Text</td>
+                                <td>เนื้อหาโพสต์</td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td>posted_by</td>
+                                <td>String</td>
+                                <td>ชื่อผู้โพสต์</td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td>created_at</td>
+                                <td>Timestamp</td>
+                                <td>วันที่สร้าง</td>
+                                <td>Auto</td>
+                            </tr>
+                            <tr>
+                                <td>updated_at</td>
+                                <td>Timestamp</td>
+                                <td>วันที่แก้ไขล่าสุด</td>
+                                <td>Auto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ฟีเจอร์เพิ่มเติม -->
+        <section class="mb-5">
+            <h2 class="section-header"><i class="fas fa-magic"></i> ฟีเจอร์เพิ่มเติม</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <h6><i class="fas fa-check-circle"></i> Validation</h6>
+                        <p>ระบบตรวจสอบความถูกต้องของข้อมูลก่อนบันทึก</p>
+                        <ul>
+                            <li>หัวข้อโพสต์ต้องไม่เกิน 255 ตัวอักษร</li>
+                            <li>เนื้อหาและชื่อผู้โพสต์จำเป็นต้องกรอก</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <h6><i class="fas fa-mobile-alt"></i> Responsive Design</h6>
+                        <p>ใช้ Bootstrap 4 ทำให้เว็บไซต์รองรับหน้าจอทุกขนาด</p>
+                        <ul>
+                            <li>แสดงผลได้ดีบนมือถือ</li>
+                            <li>การ์ดโพสต์จัดเรียงอัตโนมัติ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Laravel-Project67 - เอกสารประกอบการทำงานของระบบ</p>
+            <p class="small">พัฒนาด้วย Laravel Framework และ Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to navigation links
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
